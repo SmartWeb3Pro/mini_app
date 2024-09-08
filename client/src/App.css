@@ -1,0 +1,289 @@
+.bg-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('./path-to-your-background-image.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  padding: 16px;
+  background-color: #1d2025;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.invite-section {
+  padding: 16px 24px;
+  background-color: #1d2025;
+  border-radius: 12px;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.invite-section .invite-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.invite-section .invite-item p {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin: 0;
+}
+
+.invite-section .invite-item .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.icon-X tokens {
+  background-image: url('./images/X tokens.png');
+}
+
+.icon-invite-friends {
+  background-image: url('./images/invite-friends.png');
+}
+
+.icon-boost-X tokens {
+  background-image: url('./images/boost-X tokens.png');
+}
+
+.app-container {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.bg-black {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.progress-gradient {
+  background: linear-gradient(to right, #90ef89, #d692dd, #726edd);
+  height: 8px;
+  border-radius: 4px;
+}
+
+.top-glow {
+  box-shadow: 0 -26px 20px rgba(243, 186, 47, 0.3);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 90%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  animation: blink 1s infinite;
+}
+
+.circle-outer {
+  background: linear-gradient(to bottom, #575def, #202731);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vw;
+  max-width: 360px;
+  max-height: 360px;
+  border-radius: 12px;
+}
+
+.circle-inner {
+  background: radial-gradient(circle, #4960b2, #282e3e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 80vw;
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.invite-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.invite-section p {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-bottom: 16px;
+}
+
+.invite-section input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  color: black;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.invite-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  color: black;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.invite-section button:hover {
+  background-color: #ffca28;
+}
+
+.invite-section .message {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.text-appear {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+.icon-X tokens,
+.icon-invite-friends,
+.icon-boost-X tokens {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.icon-X tokens {
+  background-image: url('./images/X tokens.png');
+}
+
+.icon-invite-friends {
+  background-image: url('./images/invite-friends.png');
+}
+
+.icon-boost-X tokens {
+  background-image: url('./images/boost-X tokens.png');
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
